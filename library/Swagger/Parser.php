@@ -329,6 +329,9 @@ class Parser
         }
 
         foreach ($annotations as $annotation) {
+            if (substr(get_class($annotation),0,7) != 'Swagger') {
+				continue;
+			}
             foreach ($this->processors as $processor) {
                 $processor->process($annotation, $context);
             }
