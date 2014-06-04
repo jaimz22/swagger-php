@@ -66,6 +66,14 @@ class Swagger
     }
 
     /**
+     * Register doctrine annotations
+     */
+    static public function RegisteredAnnotations()
+	{
+		AnnotationRegistry::registerAutoloadNamespace(__NAMESPACE__, dirname(__DIR__));
+	}
+
+    /**
      * @static
      *
      * @param      $path
