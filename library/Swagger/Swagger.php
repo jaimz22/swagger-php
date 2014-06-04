@@ -19,6 +19,7 @@ namespace Swagger;
  * @category   Swagger
  * @package    Swagger
  */
+use Doctrine\Common\Annotations\AnnotationRegistry;
 use Swagger\Annotations\Resource;
 use Swagger\Annotations\Model;
 use Swagger\Processors\ProcessorInterface;
